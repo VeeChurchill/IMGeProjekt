@@ -17,9 +17,7 @@ public class CarBehaviour : MonoBehaviour {
 
     private void Update()
     {
-        Debug.Log("rb vel in Update" + rb.velocity);
-        
-        
+        Debug.Log("rb vel in Update " + rb.velocity);
     }
 
     public void Accelerate()
