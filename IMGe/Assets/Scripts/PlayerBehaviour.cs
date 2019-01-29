@@ -17,4 +17,9 @@ public class PlayerBehaviour : MonoBehaviour {
 		newX = newX < -maxPosX ? -maxPosX : newX;
 		transform.position = new Vector3 (newX, transform.position.y, transform.position.z);
 	}
+
+	void OnTriggerEnter(Collider col)
+	{
+		Handheld.Vibrate();
+	}
 }
